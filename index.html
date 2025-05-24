@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <div class="Calculator">
+            <div class="top">
+                <div class="name"><img src="calculator.png" alt="bmi" width="50px" height="50ox"> CALCULATOR</div>
+                <div class="options">
+                    <div class="bmi"><a href="./bmi.html" style="text-decoration: none;color: black;">BMI</a></div>
+                    <div class="calculator"><a href="./index.html" style="text-decoration: none;color: black;">Calculator</a></a></div>
+                </div>
+            </div>
+            <div class="del">
+                <input type="text" id="display" class="output" readonly>
+                <button class="delete" onclick="delete_keys()"><img src="backspace.png" alt="Delete"></button>
+            </div>
+            <div class="keys">
+                <button onclick="todisplay('+')" class="operator">+</button>
+                <button onclick="todisplay('7')">7</button>
+                <button onclick="todisplay('8')">8</button>
+                <button onclick="todisplay('9')">9</button>
+                <button onclick="todisplay('-')" class="operator">-</button>
+                <button onclick="todisplay('4')">4</button>
+                <button onclick="todisplay('5')">5</button>
+                <button onclick="todisplay('6')">6</button>
+                <button onclick="todisplay('*')" class="operator">*</button>
+                <button onclick="todisplay('1')">1</button>
+                <button onclick="todisplay('2')">2</button>
+                <button onclick="todisplay('3')">3</button>
+                <button onclick="todisplay('/')" class="operator">/</button>
+                <button onclick="todisplay('0')">0</button>
+                <button onclick="todisplay('.')">.</button>
+                <button onclick="calc('=')">=</button>
+            </div>
+            <button onclick="clear_display()" class="clear">C</button>
+        </div>
+    <script src="./app.js"></script>
+</body>
+</html>
